@@ -4,7 +4,7 @@
 
 一张大图，通过这种图可以对常用共有有个较好的概览：
 
-[img](http://www.brendangregg.com/Perf/linuxperftools.png)
+[img](./linuxperftools.png)
 
 进一步工具介绍：
 

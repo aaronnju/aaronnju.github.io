@@ -6,4 +6,4 @@
 
 ## Linux 工具使用
 
-* [Linux性能分析工具](https://github.com/aaronnju/doc/wiki/performance_tools.md)
+* [Linux性能分析工具](./linux-performance-analysis/performance_tools.md)
