@@ -6,6 +6,8 @@
 
 ![img](./linuxperftools.png)
 
+[网络管理](http://man.linuxde.net/dig)
+
 进一步工具介绍：
 
 * [netstat](./netstat.md)
