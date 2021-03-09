@@ -14,11 +14,11 @@ make install
 ## Mac下编译
 
 ```bash
-/Users/shumingwang/Qt/5.12.0/clang_64/bin/qmake qwt.pro
-make
-sudo make install
-Inside your QT Project you have to add the following line to the .pro File include ( /usr/local/qwt-6.1.0/features/qwt.prf ) includes QWT libary into Project
-Now you have to create a softlink like this : sudo ln -s /usr/local/qwt-6.1.0/lib/qwt.framework/qwt /usr/lib/qwt
+
+# mac build qwt
+cd ~/Source/qwt-6.1.5/  && /Users/shumingwang/Qt/5.12.0/clang_64/bin/qmake qwt.pro && make && sudo make install
+sudo cp -r /usr/local/qwt-6.1.5/lib/qwt.framework  /Library/Frameworks/
+```
 
 ## 修改统计图坐标轴文本为非科学技术
 ```C++
