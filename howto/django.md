@@ -29,6 +29,10 @@ python3.9 -c "import sqlite3; print(sqlite3.sqlite_version)"
 
 * sample site
 ```bash
+# 每次启动的时候还是需要执行下，否则找不到
+export LD_LIBRARY_PATH="/usr/local/lib"
 django-admin startproject mysite
 python3.9 manage.py runserver
 ```
+
+
