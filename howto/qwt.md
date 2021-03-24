@@ -21,9 +21,19 @@ sudo cp -r /usr/local/qwt-6.1.5/lib/qwt.framework  /Library/Frameworks/
 ```
 
 ## 修改统计图坐标轴文本为非科学技术
+* ./qwt-6.1.5/src/qwt_abstract_scale_draw.cpp : 374
 ```C++
+// old
 QwtText QwtAbstractScaleDraw::label( double value ) const
 {
-    return QLocale().toString( value , 'f', 0);
+    return QLocale().toString( value );
+}
+// new
+QwtText QwtAbstractScaleDraw::label( double value ) const
+{ 
+    if (value > 100)
+        return QLocale().toString( value , 'f', 0);
+    else
+        return QLocale().toString( value );
 }
 ```
